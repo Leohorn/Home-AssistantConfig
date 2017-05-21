@@ -1,0 +1,10 @@
+alias: "Media player playing"
+trigger:
+  platform: state
+  entity_id: media_player.baldr
+  to: 'playing'
+  
+action:
+  service: switch.turn_on
+  data:
+    entity_id: switch.versterker_woonkamer

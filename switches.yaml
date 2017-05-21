@@ -1,0 +1,8 @@
+- platform: rpi_gpio
+  ports:
+    18: Versterker
+    
+- platform: wake_on_lan
+  mac_address: "00-30-67-AF-D2-60"
+  name: "Freya"
+  host: "192.168.178.31"

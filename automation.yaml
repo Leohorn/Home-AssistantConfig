@@ -1,0 +1,35 @@
+####MEDIA BASED####
+#- !include automation/media_playing_night.yaml
+- !include automation/media_playing_woonkamer.yaml
+#- !include automation/media_stopped_night.yaml
+- !include automation/media_stopped_woonkamer.yaml
+####INPUT SELECT####
+- !include automation/lullaby_forrest.yaml
+- !include automation/lullaby_rain.yaml
+- !include automation/lullaby_none.yaml
+####HYPERION AUTOMATIONS####
+#- !include automation/hyperion_mood_blobs_blue.yaml
+#- !include automation/hyperion_knight_rider.yaml
+#- !include automation/hyperion_mood_blobs_cold.yaml
+#- !include automation/hyperion_mood_blobs_full_color.yaml
+#- !include automation/hyperion_mood_blobs_green.yaml
+#- !include automation/hyperion_mood_blobs_red.yaml
+#- !include automation/hyperion_mood_blobs_warm.yaml
+#- !include automation/hyperion_rainbow_mood.yaml
+#- !include automation/hyperion_rainbow_swirl.yaml
+#- !include automation/hyperion_snake.yaml
+#- !include automation/hyperion_strobe_blue.yaml
+#- !include automation/hyperion_strobe_white.yaml
+#- !include automation/hyperion_strobe_raspberry.yaml
+#- !include automation/hyperion_off.yaml
+#- !include automation/hyperion_color_traces.yaml
+#- !include automation/hyperion_snake.yaml
+#- !include automation/hyperion_cinema_dim_lights.yaml
+#- !include automation/hyperion_cinema_brighten_lights.yaml
+#- !include automation/hyperion_police_lights_single.yaml
+#- !include automation/hyperion_random.yaml
+#- !include automation/hyperion_police_lights_solid.yaml
+#- !include automation/hyperion_running_dots.yaml
+#- !include automation/hyperion_system_shutdown.yaml
+#- !include automation/hyperion_sparks_color.yaml
+#- !include automation/hyperion_sparks.yaml

@@ -1,0 +1,27 @@
+# If you select "Rain", play the "rain.mp3" file
+alias: Play Rain Lullaby
+trigger:
+  platform: state
+  entity_id: input_select.lullaby
+  state: "Rain"
+  
+action:
+  - service: switch.turn_on
+    data:
+      entity_id: switch.freya
+  - delay:
+      seconds: 5
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.freya
+      media_content_id: nfs://192.168.178.250/volume2/Muziek/Nature/Rain and Thunder.mp3
+      media_content_type: audio/mp4
+  - delay:
+      hours: 1
+      minutes: 30
+  - service: media_player.media_stop
+    data:
+      entity_id: media_player.freya
+  - service: media_player.turn_off
+    data:
+      entity_id: media_player.freya 

@@ -1,0 +1,50 @@
+########CUSTOMIZE SENSORS########
+####WEATHER####
+     sensor.buienradar:
+        friendly_name: Buienradar
+        icon: mdi:weather-pouring
+     #sensor.yr_precipitation:
+     #   friendly_name: Regenverwachting
+     #sensor.yr_symbol:
+     #   friendly_name: Weer
+     #sensor.yr_temperature:
+     #   friendly_name: Temperatuur
+     #   icon: mdi:temperature-celsius
+     #sensor.yr_wind_direction:
+     #   friendly_name: Windrichting
+     #   icon: mdi:weather-windy
+     #sensor.yr_wind_speed:
+     #   friendly_name: Windsnelheid
+     #   icon: mdi:weather-windy
+     #sensor.yr_cloudiness:
+     #   friendly_name: Bewolking
+     #   icon: mdi:cloud
+     #sensor.yr_fog:
+     #   friendly_name: Mist
+     #   icon: mdi:weather-fog
+     #sensor.yr_pressure:
+     #   friendly_name: Luchtdruk
+     #   icon: mdi:nature
+     #sensor.yr_humidity:
+     #   friendly_name: Luchtvochtigheid
+####Pi Hole####
+     sensor.pihole_ads_blocked_today:
+        friendly_name: Ads geblokt
+     sensor.pihole_dns_queries_today:
+        friendly_name: DNS aanvragen
+     sensor.pihole_ads_percentage_blocked_today:
+        friendly_name: Percentage geblokte ads
+####Fritz.Box####
+     sensor.fritz_netmonitor:
+        friendly_name: Fritz.Box
+        icon: mdi:router
+     sensor.phone:
+        friendly_name: Telefoon
+        icon: mdi:phone
+####Pawned####
+     sensor.breaches_mvrauwdeuntopenmailboxorg:
+        friendly_name: m.vrauwdeunt openmailbox
+     sensor.breaches_zanbeegmailcom:
+        friendly_name: Zanbee Gmail
+     sensor.breaches_thoniarietdijkhotmailcom:
+        friendly_name: Thonia Hotmail

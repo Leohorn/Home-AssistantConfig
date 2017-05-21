@@ -1,0 +1,13 @@
+alias: Stop the Lullaby
+trigger:
+  platform: state
+  entity_id: input_select.lullaby
+  state: "None"
+action:
+  - service: media_player.media_stop
+    data:
+      entity_id: media_player.freya
+  - service: media_player.turn_off
+    data:
+      entity_id: media_player.freya
+ 

@@ -1,0 +1,56 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_lat
+  longitude: !secret home_long
+  elevation: 0.683
+  unit_system: metric
+  time_zone: Europe/Amsterdam
+  customize: !include customize.yaml
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  api_password: !secret http_password
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
+  base_url: hass.gladsheimr.nl:8123
+  #trusted_networks:
+  #  - 127.0.0.1
+  #  - ::1
+  #  - 192.168.178.1/24
+  #  - 2001:984:438B::/48
+
+updater:
+
+
+discovery:
+
+
+conversation:
+
+
+history:
+
+
+logbook:
+
+
+sun:
+
+tts:
+  platform: google
+
+automation: !include automation.yaml
+camera: !include camera.yaml
+device_tracker: !include trackers.yaml
+group: !include groups.yaml
+input_select: !include input_select.yaml
+media_player: !include mediaplayers.yaml
+sensor: !include sensors.yaml
+switch: !include switches.yaml
+
+

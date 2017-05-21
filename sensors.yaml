@@ -1,0 +1,79 @@
+### Devices
+- platform: fritzbox_callmonitor
+- platform: fritzbox_netmonitor
+- platform: pi_hole
+- platform: speedtest
+  minute: 30
+  hour:
+    - 0
+    - 6
+    - 12
+    - 18
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+    
+- platform: sabnzbd
+  name: SABnzbd
+  api_key: !secret sabnzbd_api_key
+  host: bragi
+  port: 8080
+  ssl: False
+  monitored_variables:
+    - 'current_status'
+    - 'speed'
+    - 'queue_size'
+    - 'queue_remaining'
+    - 'disk_size'
+    - 'disk_free'
+
+- platform: sonarr
+  api_key: !secret sonarr_api_key
+  host: bragi
+  port: 8989
+  monitored_conditions:
+    - 'series'
+    - 'upcoming'
+    - 'wanted'
+    - 'queue'
+    - 'commands'
+    - 'diskspace'
+
+- platform: haveibeenpwned
+  email: 
+   - zanbee@gmail.com
+   - m.vrauwdeunt@openmailbox.org
+   - thoniarietdijk@hotmail.com
+
+- platform: synologydsm
+  host: 192.168.178.250
+  username: !secret dsm_user
+  password: !secret dsm_pass
+  monitored_conditions:
+    - cpu_total_load
+    - memory_real_usage
+    - network_up
+    
+
+### Environment
+- platform: yweather
+  woeid: 12851795
+  forecast: 0
+  name: Thuis
+  monitored_conditions:
+   - weather
+   - weather_current
+   - temp_min
+   - temp_max
+   - temperature
+   
+- platform: time_date
+  display_options:
+    - time
+    - date
+    - time_date
+    - beat
+- platform: buienradar
+  name: "Buienradar"
+  timeframe: 3600

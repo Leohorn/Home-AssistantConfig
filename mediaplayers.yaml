@@ -1,0 +1,15 @@
+- platform: kodi
+  name: Baldr
+  host: localhost
+  port: 8080
+  username: !secret kodi_user
+  password: !secret kodi_pass
+  turn_of_action: none
+   
+- platform: kodi
+  name: Freya
+  host: 192.168.178.31
+  port: 8080
+  username: !secret kodi_user
+  password: !secret kodi_pass
+  turn_off_action: suspend

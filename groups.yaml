@@ -1,0 +1,122 @@
+asgard:
+  name: Asgard
+  view: true
+  entities:
+  - updater.updater
+  - sun.sun
+  - sensor.yr_symbol
+  - device_tracker.michel
+  - device_tracker.thonia
+  - device_tracker.zoe
+  - group.weer
+  - input_select.lullaby
+  
+kamers:
+  name: Kamers
+  view: true
+  entities:
+  - group.woonkamer
+  - group.slaapkamer
+  
+servers:
+  name: Servers
+  view: true
+  entities:
+  - group.systemen
+  - group.speedtest
+  - group.pi_hole
+  - group.download
+  - group.series
+  - group.pawned
+  - group.hass
+  - sensor.fritz_netmonitor
+  - sensor.phone
+  
+#Servers
+dsm:
+  name: Bragi Xpenology
+
+download:
+  name: Downloaders
+  entities:
+  - sensor.sabnzbd_status
+  - sensor.sabnzbd_speed
+  - sensor.sabnzbd_queue
+  - sensor.sababnzbd_left
+
+series:
+  name: Series
+  entities:
+  - sensor.sonarr_queue
+  - sensor.sonarr_series
+  - sensor.sonarr_upcoming
+  - sensor.sonarr_wanted
+  - sensor.sonarr_disk_space
+  
+Pi Hole:
+  name: Pi Hole
+  entities:
+  - sensor.pihole_ads_blocked_today
+  - sensor.pihole_ads_percentage_blocked_today
+  - sensor.pihole_dns_queries_today
+
+Speedtest:
+  name: Speedtest
+  entities:
+  - sensor.speedtest_ping
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+
+pawned:
+  name: Have I Been Pawned
+  entities:
+  - sensor.breaches_mvrauwdeuntopenmailboxorg
+  - sensor.breaches_zanbeegmailcom
+  - sensor.breaches_thoniarietdijkhotmailcom
+
+Woonkamer:
+- switch.versterker
+- input_select.hyperion_effect
+- media_player.baldr
+
+Slaapkamer:
+- input_select.lullaby
+- switch.freya
+- media_player.freya
+
+Systemen:
+- sensor.fritz_netmonitor
+- sensor.phone
+- device_tracker.bragi
+- device_tracker.dlink
+- device_tracker.fritzbox
+- device_tracker.tplink
+
+Weer:
+- sensor.time__date
+- sensor.thuis_current
+- sensor.thuis_condition
+- sensor.thuis_temperature
+- sensor.thuis_temperature_max
+- sensor.thuis_temperature_min
+- sensor.buienradar
+- camera.nederland
+
+mediaplayers:
+  name: Mediaplayers
+  entities:
+  - media_player.baldr
+  - media_player.freya
+
+
+Hass:
+  name: Home Assistant Status
+  entities:
+  #- script.restart_ha
+  - sensor.cpu_load_total
+  - sensor.memory_usage_real
+  - sensor.network_up
+  #- sensor.cpu_use
+  #- sensor.ram_free
+  #- sensor.disk_free_home
+  #- sensor.last_boot

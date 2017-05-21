@@ -1,0 +1,5 @@
+- platform: fritz
+
+- platform: nmap_tracker
+  hosts: 192.168.178.1/24
+  exclude: 192.168.178.200

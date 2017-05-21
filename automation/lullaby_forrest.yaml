@@ -1,0 +1,19 @@
+# If you select "Forrest", play the "Forest and Nature.mp3" file
+alias: Play Forrest Lullaby
+trigger:
+  platform: state
+  entity_id: input_select.lullaby
+  state: "Forrest"
+  
+action:
+  - service: switch.turn_on
+    data:
+      entity_id: switch.freya
+  - delay:
+      seconds: 5
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.freya
+      media_content_id: nfs://192.168.178.250/volume2/Muziek/Nature/Forest and Nature.mp3
+      media_content_type: audio/mp4
+
